@@ -1,0 +1,557 @@
+/* reset css */
+
+* , *::before , *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-family: Arial;
+}
+
+a , a:link , a:visited , a:active {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 1rem 4.5rem;
+    color: #fff;
+}
+
+.btn--animated {
+    border: .3rem solid #fff;
+    border-end-end-radius: 2rem;
+    transition: all 1s .50s;
+}
+
+.btn--animated:hover {
+    background: #fff;
+    color: #000;
+    animation:  flash__btn 1s ease;  
+}
+
+/*  main header */
+
+.main__header {
+    min-height: 100vh;
+    background: url(../assets/Cybertruck-Hero-Desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.main__header .container {
+    width: 95vw;
+    margin: 0 auto;
+}
+
+.main__header .container .navbar {
+    min-height: 8vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__header .container .navbar .navbar__logo .navbar__logo-svg {
+    width: 40%;
+}
+
+/* the animation of the link is not correct , try another day man */
+
+.main__header .container .navbar .navbar__menu li {
+    display: inline-block;
+    padding: .5rem 2rem;
+    transition: all 1s ease;
+}
+
+.main__header .container .navbar .navbar__menu li:hover {
+    background: rgba(0,0,0,0.2);
+    border-radius: 1rem;
+}
+
+.main__header .container .navbar .navbar__menu li .navbar__menu-link {
+    color: #000;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+
+.main__header .container .navbar .navbar__burger {
+    cursor: pointer;
+    display: none;
+}
+
+.main__header .container .navbar .navbar__burger .line1 {
+    width: 3rem;
+    height: .2rem;
+    background: #000;
+    margin: .5rem 0; 
+}
+
+.main__header .container .navbar .navbar__burger .line2 {
+    width: 3rem;
+    height: .2rem;
+    background: #000;
+    margin: .5rem 0; 
+}
+
+
+.main__header .container .navbar .navbar__burger .line3 {
+    width: 3rem;
+    height: .2rem;
+    background: #000;
+    margin: .5rem 0; 
+}
+
+.main__header .container .content {
+    min-height: 80vh;
+    text-align: center;
+    margin-top: 7rem;
+    position: relative;
+}
+
+.main__header .container .content img {
+    height: auto;
+    width: 20%;
+    object-fit: cover;
+}
+
+.main__header .container .content p {
+    font-size: 1rem;
+    padding-top: .6rem;
+    font-weight: bold;
+    letter-spacing: .2rem;
+    color: #171a20;
+}
+
+.main__header .container .content .to__bottom {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.btn {
+    cursor: pointer;
+    padding: 1rem 4.5rem;
+    color: #fff;
+}
+
+.btn--animated {
+    border: .3rem solid #fff;
+    border-end-end-radius: 2rem;
+    transition: all 1s .50s;
+}
+
+   
+
+/* main */
+
+main {
+    background: #000;
+}
+
+/* section -> esoscheletro */
+
+.main .esoscheletro {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0 0 0;
+}
+
+
+.main .esoscheletro .container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.main .esoscheletro .container .content__section-esoscheletro {
+    color: #fff;
+    margin: 4rem 0;
+}
+
+.main .esoscheletro .container .content__section-esoscheletro h1 {
+    text-shadow: 0 0 7px #fff;
+    padding-bottom: 1rem;
+}
+
+.main .esoscheletro .container .content__section-esoscheletro p {
+    color: #6c6c6c;
+    font-weight: bold;
+}
+
+/* section -> composizione */
+
+.main .composizione {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0 0 0;
+}
+
+
+.main .composizione .container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.main .composizione .container .content__section-composizione {
+    color: #fff;
+    margin: 4rem 0;
+}
+
+.main .composizione .container .content__section-composizione .row__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .composizione .container .content__section-composizione .row__content .row__content-title {
+    flex: 1 1 30%;
+}
+
+.main .composizione .container .content__section-composizione .row__content .row__content-title h3 {
+    text-shadow: 0 0 7px #fff;
+}
+
+.main .composizione .container .content__section-composizione .row__content .row__content-p  {
+    flex: 1 1 70%;
+}
+
+.main .composizione .container .content__section-composizione .row__content .row__content-p p {
+    color: #6c6c6c;
+    font-weight: bold;
+}
+
+
+/* section -> vetro */
+
+.main .vetro {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0 0 0;
+}
+
+
+.main .vetro .container {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.main .vetro .container .content__section-vetro {
+    color: #fff;
+    margin: 4rem 0;
+}
+
+.main .vetro .container .content__section-vetro .row__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .vetro .container .content__section-vetro .row__content .row__content-title {
+    flex: 1 1 30%;
+}
+
+.main .vetro .container .content__section-vetro .row__content .row__content-title h3 {
+    text-shadow: 0 0 7px #fff;
+}
+
+.main .vetro .container .content__section-vetro .row__content .row__content-p  {
+    flex: 1 1 70%;
+}
+
+.main .vetro .container .content__section-vetro .row__content .row__content-p p {
+    color: #6c6c6c;
+    font-weight: bold;
+}
+
+/* section -> video */
+
+.main .video {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0 0 0;
+}
+
+.main .video .container {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.main .vetro .container .content__section-video {
+    color: #fff;
+}
+
+.main .video .container .content__section-video .row__content {
+    margin: 4rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .video .container .content__section-video .row__content .row__content-title {
+    flex: 1 1 30%;
+}
+
+.main .video .container .content__section-video .row__content .row__content-title h3 {
+    color: #fff;
+    text-shadow: 0 0 7px #fff;
+}
+
+.main .video .container .content__section-video .row__content .row__content-p  {
+    flex: 1 1 70%;
+}
+
+.main .video .container .content__section-video .row__content .row__content-p p {
+    color: #6c6c6c;
+    font-weight: bold;
+}
+
+/* footer */
+
+.main__footer {
+    min-height: 60vh;
+    background: #000;
+}
+
+.main__footer .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main__footer .container .content {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__footer .container .content .row__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.main__footer .container .content .row__content .row__content-col {
+    flex: 1 1 50%;
+}
+
+
+
+.main__footer .container .content .row__content .row__content-col--col1 img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+    
+.main__footer .container .content .row__content .row__content-col--col2 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* second footer */
+
+.second__footer {
+    background: #000;
+    min-height: 10vh;
+}
+
+.second__footer ul {
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.second__footer ul li {
+    color: #6c6c6c;
+    position: relative;
+}
+
+.second__footer ul li::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    width: 0;
+    height: .2rem;
+    transition: .4s ease;
+}
+
+.second__footer ul li:hover::after {
+    width: 100%;
+}
+
+.second__footer ul li a {
+    color: #6c6c6c;
+}
+
+/* media */
+
+@media screen and (max-width: 1024px) {
+    .main__header .container .navbar .navbar__menu {
+        position: fixed;
+        top: 0;
+        left: 0%;
+        width: 50%;
+        height: 100%;
+        background: #fff;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        transition: 1s ease-in-out;
+    }
+
+    .main__header .container .navbar .navbar--open {
+        transform: translate(-100%);
+    }
+
+    .main__header .container .navbar .navbar__burger {
+        display: inline-block;
+        z-index: 100;
+    }
+    
+    
+    .main__header .container .content img {
+        height: auto;
+        width: 50%;
+        object-fit: cover;
+    }
+
+    .main__header .container .content p {
+        padding-top: 2rem;
+        font-size: 1.1rem;
+    }
+
+    .main .esoscheletro img {
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .main .esoscheletro .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .main .composizione img {
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .main .composizione .container .content__section-composizione .row__content {
+        flex-direction: column;
+    }
+
+    .main .composizione .container .content__section-composizione .row__content .row__content-title h3 {
+        padding-bottom: 1rem;
+    }
+
+    .main .vetro img {
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .main .vetro .container .content__section-vetro .row__content {
+        flex-direction: column;
+    }
+
+    .main .vetro .container .content__section-vetro .row__content .row__content-title h3 {
+        padding-bottom: 1rem;
+    }
+
+
+    .main .video video {
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .main .video .container .content__section-video .row__content {
+        flex-direction: column;
+    }
+
+    .main .video .container .content__section-video .row__content .row__content-title h3 {
+        padding-bottom: 1rem;
+    }
+
+    .main__footer .container .content .row__content {
+        flex-direction: column;
+    }
+
+    .second__footer ul {
+        flex-direction: column;
+    }
+}
+
+
+/* animation of the btn__animated */
+
+@keyframes flash__btn {
+    0% {
+        border: .3rem solid rgba(0, 0, 0, 0.205);
+    }
+    10% {
+        border: .3rem solid #fff;
+    }
+    20% {
+        border: .3rem solid rgba(0, 0, 0, 0.205);
+    }
+    30% {
+        border: .3rem solid #fff;
+    }
+    40% {
+        border: .3rem solid rgba(0, 0, 0, 0.205);
+    }
+    50% {
+        border: .3rem solid #fff;
+    }
+    60% {
+        border: .3rem solid rgba(0, 0, 0, 0.205);
+    }
+    70% {
+        border: .3rem solid #fff;
+    }
+    80% {
+        border: .3rem solid rgba(0, 0, 0, 0.205);
+    }
+    90% {
+        border: .3rem solid #fff;
+    }
+    100% {
+        border: .3rem solid #fff;
+    }
+}
